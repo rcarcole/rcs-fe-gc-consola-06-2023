@@ -1,6 +1,7 @@
 body {
+    display: flex;
     margin: 10em;
-    background-color: red;
+    justify-content: space-around;
 }
 
 #carcasa {
@@ -270,6 +271,8 @@ body {
     height: 20px;
     margin-left: 1vw;
     margin-top: -22px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .zona-inferior-botones-select {
@@ -279,6 +282,8 @@ body {
     height: 20px;
     margin-top: -22px;
     margin-left: 40px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .select {
@@ -287,6 +292,7 @@ body {
     margin-top: 30px;
     color: #3B3333;
     opacity: 0.3;
+    cursor: auto;
 }
 
 .start{
@@ -295,6 +301,7 @@ body {
     margin-top: 30px;
     color: #3B3333;
     opacity: 0.3;
+    cursor: auto;
 }
 
 .zona-inferior-estetica-inferior {

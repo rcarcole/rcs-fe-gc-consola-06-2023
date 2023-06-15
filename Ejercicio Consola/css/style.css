@@ -82,7 +82,7 @@ body {
     position: absolute;
     margin-top: 31vh;
     margin-left: 7vw;
-    color : white;
+    color : #b7b7b7;
     font-size: 30px;
     font-family: Pretendo;
 }
@@ -144,13 +144,14 @@ body {
 .zona-central-logo-nintendo {
     text-align: center;
     text-shadow: 2px 2px 5px #000000;
-    border: 2px solid white;
+    border: 2px solid #3B3333;
     border-radius: 30px;
     margin-top: 4vh;
-    margin-left: 1vw;
-    color: white;
+    color: #3B3333;
     font-size: 30px;
     font-family: Pretendo;
+    opacity: 0.3;
+    margin-top: 6vh;
 }
 
 .zona-central-cruceta {
@@ -160,8 +161,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 10vh;
     margin-left: 2vw;
-    width: 5vw;
-    height: 9vh;
+    width: 6vw;
+    height: 12vh;
 }
 
 .zona-central-cruceta-arriba {
@@ -180,63 +181,76 @@ body {
     background-color: #101011;
 }
 
+
 /* CAMBIO DE COLOR DE TODOS LOS ICONOS DE GOOGLE ICONS A BLANCO */
 .material-symbols-outlined {
-    color: white;
+    font-size: 28px;
 }
 
 .flechaDerecha {
     cursor: pointer;
-    margin: 8px;
+    margin: 12px;
 }
 
 .flechaAbajo {
     cursor: pointer;
-    margin: 8px;
+    margin: 12px;
     transform: rotate(90deg);
 }
 
 .flechaIzquierda {
     cursor: pointer;
-    margin: 8px;
+    margin: 12px;
     transform: rotate(180deg);
 }
 
 .flechaArriba {
     cursor: pointer;
-    margin: 8px;
+    margin: 12px;
     transform: rotate(270deg);
 }
 
 .circuloBlanco{
-    margin: 8px;
+    margin: 12px;
 }
 
 .zona-central-botones-AB{
-    z-index: 1;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .zona-central-botones-AB-botonA {
-    background-color: #101011;
     border-radius: 50%;
-    width: 2.5vw;
-    height: 5vh;
-    margin-top: 2vh;
-    margin-left: 4vw;
+    width: 2.75vw;
+    height: 5.5vh;
+    margin-left: 3.5vw;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(89,83,7,1) 100%);
 }
 
 .zona-central-botones-AB-botonB {
     background-color: #101011;
     border-radius: 50%;
-    width: 2.5vw;
-    height: 5vh;
+    width: 2.75vw;
+    height: 5.5vh;
     margin-top: -1.5vh;
-    margin-left: 0.5vw;
+}
+
+.boton-a{
+    margin-top: 1vh;
+    margin-left: 0.92vw;
+    position: absolute;
+    font-size: 30px;
+}
+
+.boton-b{
+    margin-top: 1vh;
+    margin-left: 0.92vw;
+    position: absolute;
+    font-size: 30px;
 }
 
 #zona-inferior {
     display: grid;
-    /* position: absolute; */
     height: 15vh;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -252,22 +266,62 @@ body {
 .zona-inferior-botones-start {
     background-color: #101011;
     border-radius: 30px;
-    width: 40px;
-    height: 10px;
-    margin-left: 2vw;
+    width: 60px;
+    height: 20px;
+    margin-left: 1vw;
+    margin-top: -22px;
 }
 
 .zona-inferior-botones-select {
     background-color: #101011;
     border-radius: 30px;
-    width: 40px;
-    height: 10px;
+    width: 60px;
+    height: 20px;
+    margin-top: -22px;
+    margin-left: 40px;
+}
+
+.select {
+    margin-left: 0px;
+    position: absolute;
+    margin-top: 30px;
+    color: #3B3333;
+    opacity: 0.3;
+}
+
+.start{
+    margin-left: 6px;
+    position: absolute;
+    margin-top: 30px;
+    color: #3B3333;
+    opacity: 0.3;
 }
 
 .zona-inferior-estetica-inferior {
+    display: grid;
     margin-top: -9vh;
     width: 25vw;
     height: 14.5vh;
     border-radius: 50%;
     background-color: #D6C70D;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.zona-inferior-estetica-inferior-altavoz {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: rotate(-6deg);
+}
+
+.opened {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.closed {
+    background-color: #3B3333;
+    border-radius: 50%;
+    opacity: 0.2;
 }

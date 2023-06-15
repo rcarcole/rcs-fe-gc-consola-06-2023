@@ -3,7 +3,7 @@ body {
     background-color: red;
 }
 
-.carcasa {
+#carcasa {
     background-color: #D6C70D;
     width: 25vw;
     height: 70vh;
@@ -34,7 +34,7 @@ body {
     left: 1vw;
 }
 
-.zona-superior {
+#zona-superior {
     display: flex;
     height: 35vh;
 }
@@ -234,16 +234,38 @@ body {
     margin-left: 0.5vw;
 }
 
-.zona-inferior {
+#zona-inferior {
     display: grid;
+    /* position: absolute; */
     height: 15vh;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
+.zona-inferior-botones {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.zona-inferior-botones-start {
+    background-color: #101011;
+    border-radius: 30px;
+    width: 40px;
+    height: 10px;
+    margin-left: 2vw;
+}
+
+.zona-inferior-botones-select {
+    background-color: #101011;
+    border-radius: 30px;
+    width: 40px;
+    height: 10px;
+}
+
 .zona-inferior-estetica-inferior {
-    margin-top: 70px;
+    margin-top: -9vh;
     width: 25vw;
     height: 14.5vh;
     border-radius: 50%;

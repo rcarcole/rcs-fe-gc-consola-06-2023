@@ -44,7 +44,7 @@ body {
     width: 23vw;
     height: 33vh;
     border-radius: 30px;
-    background-color: black;
+    background-color: #101011;
     position: absolute;
     margin-top: 3vh;
     margin-left: 1vw;
@@ -69,7 +69,7 @@ body {
     margin-left: -7vw;
     width: 37vw;
     height: 60vh;
-    background: linear-gradient(to bottom, transparent 95%, black 50%);
+    background: linear-gradient(to bottom, transparent 95%, #101011 50%);
     position: absolute;
     border-radius: 40%;
 }
@@ -78,7 +78,7 @@ body {
     display: flex;
     width: 14vw;
     height: 4vh;
-    background-color: black;
+    background-color: #101011;
     position: absolute;
     margin-top: 31vh;
     margin-left: 7vw;
@@ -132,20 +132,119 @@ body {
 }
 
 
-.zona-central {
+#zona-central {
     display: grid;
     height: 20vh;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.zona-central-logo-nintendo {
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    color: white;
+    font-size: 30px;
+    font-family: Pretendo;
+}
+
+.zona-central-cruceta {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    width: 5vw;
+    height: 9vh;
+}
+
+.zona-central-cruceta-arriba {
+    background-color: #101011;
+}
+.zona-central-cruceta-derecha {
+    background-color: #101011;
+}
+.zona-central-cruceta-abajo {
+    background-color: #101011;
+}
+.zona-central-cruceta-izquierda {
+    background-color: #101011;
+}
+.zona-central-cruceta-centro {
+    background-color: #101011;
+}
+
+/* CAMBIO DE COLOR DE TODOS LOS ICONOS DE GOOGLE ICONS A BLANCO */
+.material-symbols-outlined {
+    color: white;
+}
+
+.flechaDerecha {
+    cursor: pointer;
+    margin: 8px;
+}
+
+.flechaAbajo {
+    cursor: pointer;
+    margin: 8px;
+    transform: rotate(90deg);
+}
+
+.flechaIzquierda {
+    cursor: pointer;
+    margin: 8px;
+    transform: rotate(180deg);
+}
+
+.flechaArriba {
+    cursor: pointer;
+    margin: 8px;
+    transform: rotate(270deg);
+}
+
+.circuloBlanco{
+    margin: 8px;
+}
+
+.zona-central-botones-AB{
+    z-index: 1;
+}
+
+.zona-central-botones-AB-botonA {
+    background-color: #101011;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 4vw;
+}
+
+.zona-central-botones-AB-botonB {
+    background-color: #101011;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 5vh;
+    margin-top: -1.5vh;
+    margin-left: 0.5vw;
 }
 
 .zona-inferior {
-    display: flex;
+    display: grid;
     height: 15vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
 }
 
-.estetica-inferior {
-    display: flex;
+.zona-inferior-estetica-inferior {
     margin-top: 70px;
-    width: 35vw;
+    width: 25vw;
     height: 14.5vh;
     border-radius: 50%;
     background-color: #D6C70D;

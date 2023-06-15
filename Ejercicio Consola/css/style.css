@@ -1,0 +1,152 @@
+body {
+    margin: 10em;
+    background-color: red;
+}
+
+.carcasa {
+    background-color: #D6C70D;
+    width: 25vw;
+    height: 70vh;
+    border-radius: 30px;
+}
+
+.encendido {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 3vh;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.parentesis {
+    margin-top: 3.5vh;
+    font-weight: bold;
+    margin-left: 1.8vw;
+}
+
+.power {
+    background-color: rgb(248, 123, 123);
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 100%;
+    position: absolute;
+    top: 4vh;
+    left: 1vw;
+}
+
+.zona-superior {
+    display: flex;
+    height: 35vh;
+}
+
+.zona-superior-pantalla {
+    display: flex;
+    width: 23vw;
+    height: 33vh;
+    border-radius: 30px;
+    background-color: black;
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.zona-superior-pantalla-pantalla {
+    margin-top: 3.5vh;
+    margin-left: 4.5vw;
+    width: 15vw;
+    height: 23vh;
+    background-color: #5A595A;
+    z-index: 1;
+}
+
+.zona-superior-pantalla-pantalla:hover {
+    background-image: url(../img/gameBoy.png);
+    background-size: 43vw 41vh;
+}
+
+.zona-superior-pantalla-estetica-pantalla-inferior {
+    margin-top: -24.2vh;
+    margin-left: -7vw;
+    width: 37vw;
+    height: 60vh;
+    background: linear-gradient(to bottom, transparent 95%, black 50%);
+    position: absolute;
+    border-radius: 40%;
+}
+
+.zona-superior-etiqueta {
+    display: flex;
+    width: 14vw;
+    height: 4vh;
+    background-color: black;
+    position: absolute;
+    margin-top: 31vh;
+    margin-left: 7vw;
+    color : white;
+    font-size: 30px;
+    font-family: Pretendo;
+}
+
+.zona-superior-etiqueta-letras {
+    font-weight: bold;
+}
+.zona-superior-etiqueta-letras .letra-c {
+    color: #7F3443;
+    transform: rotate(8deg);
+    position: absolute;
+    font-size: 36px;
+    width: 105px;
+}
+
+.zona-superior-etiqueta-letras .letra-o {
+    color: #604E96;
+    transform: rotate(7deg);
+    position: absolute;
+    margin-left: 1vw;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.zona-superior-etiqueta-letras .letra-l {
+    color: #83A665;
+    transform: rotate(-15deg);
+    position: absolute;
+    margin-left: 1.7vw;
+    margin-top: -6px;
+}
+
+.zona-superior-etiqueta-letras .letra-o2 {
+    color: #959A45;
+    transform: rotate(7deg);
+    position: absolute;
+    margin-left: 2.4vw;
+    font-size: 23px;
+}
+
+.zona-superior-etiqueta-letras .letra-r {
+    color: #196E7E;
+    transform: rotate(-13deg);
+    position: absolute;
+    margin-left: 3.1vw;
+    margin-top: -8px;
+}
+
+
+.zona-central {
+    display: grid;
+    height: 20vh;
+}
+
+.zona-inferior {
+    display: flex;
+    height: 15vh;
+}
+
+.estetica-inferior {
+    display: flex;
+    margin-top: 70px;
+    width: 35vw;
+    height: 14.5vh;
+    border-radius: 50%;
+    background-color: #D6C70D;
+}
